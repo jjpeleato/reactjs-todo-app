@@ -5,9 +5,8 @@ export const TodoItem = ({ item, handleRemove, handleToggle }) => {
       onDoubleClick={() => handleToggle(item.id)}
     >
       <span
-        className={`align-self-center ${
-          item.done ? "text-decoration-line-through" : ""
-        }`}
+        className={`align-self-center ${item.done ? "text-decoration-line-through" : ""}`}
+        aria-label="span"
       >
         #{item.id} - {item.description}
       </span>
