@@ -24,6 +24,7 @@
     "prepare": "husky install",
     "preview": "vite preview",
     "test": "jest",
+    "test:snapshot": "jest -u",
     "test:watch": "jest --watchAll"
   },
   "dependencies": {
